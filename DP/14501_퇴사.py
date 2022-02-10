@@ -23,5 +23,5 @@ for j in range(n-1, -1, -1):
     # 상담을 받는다 했을 때 돈 + 이 다음 예상되는 돈 vs 상담을 안받았을때의 돈
     else:
         dp[j] = max(money_list[j] + dp[j + time_list[j]], dp[j+1])
-    # print(dp)
+    print(dp)
 print(dp[0])
