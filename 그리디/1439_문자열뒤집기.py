@@ -1,4 +1,5 @@
 n = input()
+
 answer = 0
 
 num = len(n)
