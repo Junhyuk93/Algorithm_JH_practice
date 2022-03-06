@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 from collections import deque
 # 1. 그래프를 입력받는다. 일반적으로 탐색 문제에서는 '1 2'라는 입력이 들어오면 graph[1]에 2를 넣고, graph[2]에는 1을 넣어서 양방향으로 연결된 관계를 표현해준다 
 
@@ -26,6 +28,7 @@ answer[x] = 0
 for _ in range(m):
     a,b = list(map(int,input().split()))
     graph[a].append(b)
+# print(graph)
 
 que = deque([x])
 
