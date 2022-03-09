@@ -1,9 +1,9 @@
-import re
 n = input()
-n= list(n)
+n = list(n)
 
 num_list = []
-text_list =[]
+text_list = []
+
 for i in range(len(n)):
     if str.isdigit(n[i]) == True:
         num_list.append(int(n[i]))
